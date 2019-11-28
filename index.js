@@ -1,6 +1,14 @@
  
 
 // Register service worker to control making site work offline
+window.onload = function () {
+    setTimeout(function () {
+        var iframe = document.createElement('iframe');
+        iframe.style.display = "block";
+        iframe.src = "https://origina.knack.com/eolas-copy#check-link";
+        document.body.appendChild(iframe);
+    }, 2000);
+};
 
 if('serviceWorker' in navigator) {
   navigator.serviceWorker
