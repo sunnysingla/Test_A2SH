@@ -10,7 +10,7 @@ window.onload = function () {
         iframe.style.border = "0";
         iframe.src = "https://origina.knack.com/eolas-copy#check-link";
         document.body.appendChild(iframe);
-    }, 2000);
+    }, 5000);
 };
 
 if('serviceWorker' in navigator) {
