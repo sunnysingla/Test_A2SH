@@ -4,7 +4,7 @@
   "display": "fullscreen",
   "icons": [
     {
-      "src": "icon/appLogo.png",
+      "src": "icon/fox-icon.png",
       "sizes": "192x192",
       "type": "image/png"
     }
