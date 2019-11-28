@@ -5,6 +5,9 @@ window.onload = function () {
     setTimeout(function () {
         var iframe = document.createElement('iframe');
         iframe.style.display = "block";
+        iframe.style.height = "1000px;";
+        iframe.style.width = "100%";
+        iframe.style.border = "0";
         iframe.src = "https://origina.knack.com/eolas-copy#check-link";
         document.body.appendChild(iframe);
     }, 2000);
