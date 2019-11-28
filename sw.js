@@ -4,7 +4,8 @@ self.addEventListener('install', function(e) {
      return cache.addAll([
        '/Test_A2SH/',
        '/Test_A2SH/index.html',
-       '/Test_A2SH/index.js'
+         '/Test_A2SH/index.js',
+         '/Test_A2SH/sw.js'
      ]);
    })
  );
