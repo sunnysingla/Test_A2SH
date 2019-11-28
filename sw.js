@@ -2,9 +2,9 @@ self.addEventListener('install', function(e) {
  e.waitUntil(
    caches.open('video-store').then(function(cache) {
      return cache.addAll([
-       '',
-       '/index.html',
-       '/index.js'
+       '/Test_A2SH/',
+       '/Test_A2SH/index.html',
+       '/Test_A2SH/index.js'
      ]);
    })
  );
