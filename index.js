@@ -1,17 +1,17 @@
- 
+const images = ['fox1','fox2','fox3','fox4'];
+const imgElem = document.querySelector('img');
+
+function randomValueFromArray(array) {
+  let randomNo =  Math.floor(Math.random() * array.length);
+  return array[randomNo];
+}
+
+setInterval(function() {
+  let randomChoice = randomValueFromArray(images);
+  imgElem.src = 'images/' + randomChoice + '.jpg';
+}, 2000)
 
 // Register service worker to control making site work offline
-window.onload = function () {
-    setTimeout(function () {
-        var iframe = document.createElement('iframe');
-        iframe.style.display = "block";
-        iframe.style.height = "1000px;";
-        iframe.style.width = "100%";
-        iframe.style.border = "0";
-        iframe.src = "https://origina.knack.com/eolas-copy#check-link";
-        document.body.appendChild(iframe);
-    }, 5000);
-};
 
 if('serviceWorker' in navigator) {
   navigator.serviceWorker
