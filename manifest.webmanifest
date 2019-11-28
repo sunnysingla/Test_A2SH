@@ -1,6 +1,6 @@
 {
   "background_color": "purple",
-  "description": "Robins and Day By PSA Retail",
+  "description": "Show Knack pages.",
   "display": "fullscreen",
   "icons": [
     {
@@ -9,7 +9,7 @@
       "type": "image/png"
     }
   ],
-  "name": "Robins and Day",
-  "short_name": "R&D",
+  "name": "A2HS",
+  "short_name": "Test A2HS",
   "start_url": "/Test_A2SH/index.html"
 }
