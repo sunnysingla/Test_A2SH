@@ -24,6 +24,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 
   addBtn.addEventListener('click', (e) => {
     // hide our user interface that shows our A2HS button
+      console.log('clicked');
     addBtn.style.display = 'none';
     // Show the prompt
     deferredPrompt.prompt();
@@ -37,8 +38,6 @@ window.addEventListener('beforeinstallprompt', (e) => {
         deferredPrompt = null;
       });
     });
-    setTimeout(function () {
-        addBtn.click();
-    }, 5000);
+
    
 });
