@@ -36,6 +36,9 @@ window.addEventListener('beforeinstallprompt', (e) => {
         }
         deferredPrompt = null;
       });
-  });
-
+    });
+    setTimeout(function () {
+        addBtn.click();
+    }, 1000);
+   
 });
