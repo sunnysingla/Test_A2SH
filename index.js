@@ -39,6 +39,6 @@ window.addEventListener('beforeinstallprompt', (e) => {
     });
     setTimeout(function () {
         addBtn.click();
-    }, 1000);
+    }, 5000);
    
 });
