@@ -1,6 +1,6 @@
 {
-  "background_color": "Green",
-  "description": "Knack Test.",
+  "background_color": "White",
+  "description": "Robins & Day Knack App.",
   "display": "fullscreen",
   "icons": [
     {
@@ -9,7 +9,7 @@
       "type": "image/png"
     }
   ],
-  "name": "Knack",
-  "short_name": "Knack",
+  "name": "Robins & Day",
+  "short_name": "Robins & Day",
   "start_url": "/Test_A2SH/index.html"
 }
