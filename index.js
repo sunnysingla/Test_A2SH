@@ -1,7 +1,4 @@
- 
-
 // Register service worker to control making site work offline
-
 if('serviceWorker' in navigator) {
   navigator.serviceWorker
            .register('/Test_A2SH/sw.js')
@@ -20,11 +17,14 @@ window.addEventListener('beforeinstallprompt', (e) => {
   // Stash the event so it can be triggered later.
   deferredPrompt = e;
   // Update UI to notify the user they can add to home screen
-    addBtn.style.display = 'block';
-    var maindv = document.getElementById('Main');
-    maindv.style.display = 'none';
-  addBtn.addEventListener('click', (e) => {
- 
+  addBtn.style.display = 'block';
+  var maindv = document.getElementById('Main');
+  maindv.style.display = 'none';
+    addBtn.addEventListener('click', (e) => {
+
+      var maindv = document.getElementById('Main');
+      maindv.style.display = 'block';
+
     addBtn.style.display = 'none';
     // Show the prompt
     deferredPrompt.prompt();
