@@ -12,8 +12,9 @@ const addBtn = document.querySelector('.add-button');
 addBtn.style.display = 'none';
 
 window.addEventListener('appinstalled', (evt) => {
-    location.href = 'https://www.robinsandday.co.uk/digital';
 
+    //const maindv = document.getElementById('Main');
+    //maindv.style.display = 'block';
 });
 
 window.addEventListener('beforeinstallprompt', (e) => {
@@ -33,7 +34,8 @@ window.addEventListener('beforeinstallprompt', (e) => {
     // Wait for the user to respond to the prompt
     deferredPrompt.userChoice.then((choiceResult) => {
         if (choiceResult.outcome === 'accepted') {
-            location.href = 'https://www.robinsandday.co.uk/digital';
+            //const maindv = document.getElementById('Main');
+            //maindv.style.display = 'block';
         } else {
           console.log('User dismissed the A2HS prompt');
         }
