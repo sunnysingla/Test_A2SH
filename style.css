@@ -25,3 +25,13 @@ img {
     object-fit: cover;
   }
 }
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    top: 90%;
+    color: white;
+    text-align: center;
+    height: 50px;
+}
