@@ -11,6 +11,11 @@ let deferredPrompt;
 const addBtn = document.querySelector('.add-button');
 addBtn.style.display = 'none';
 
+window.addEventListener('appinstalled', (evt) => {
+    location.href = 'https://www.robinsandday.co.uk/digital';
+
+});
+
 window.addEventListener('beforeinstallprompt', (e) => {
   // Prevent Chrome 67 and earlier from automatically showing the prompt
   e.preventDefault();
@@ -18,12 +23,9 @@ window.addEventListener('beforeinstallprompt', (e) => {
   deferredPrompt = e;
   // Update UI to notify the user they can add to home screen
   addBtn.style.display = 'block';
-  var maindv = document.getElementById('Main');
-  maindv.style.display = 'none';
+ 
     addBtn.addEventListener('click', (e) => {
-
-      var maindv = document.getElementById('Main');
-      maindv.style.display = 'block';
+ 
 
     addBtn.style.display = 'none';
     // Show the prompt
@@ -31,7 +33,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
     // Wait for the user to respond to the prompt
     deferredPrompt.userChoice.then((choiceResult) => {
         if (choiceResult.outcome === 'accepted') {
-          console.log('User accepted the A2HS prompt');
+            location.href = 'https://www.robinsandday.co.uk/digital';
         } else {
           console.log('User dismissed the A2HS prompt');
         }
